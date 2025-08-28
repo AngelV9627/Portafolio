@@ -2,81 +2,109 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Angel Vila | Desarrollo Web</title>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Angel Vila</title>
   <link rel="stylesheet" href="stylo.css" />
 </head>
 <body>
+  <!-- 🔹 Navbar -->
   <header>
-    <div class="header-top">
-      <h1><img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Logo desarrollo" class="logo-header" /> Angel Vila</h1>
-      <p>Desarrollador Web | Soluciones digitales para negocios reales</p>
-    </div>
-    <nav class="menu-nav">
+    <nav>
+      <h1>Angel Vila</h1>
       <ul>
+        <li><a href="#inicio">Inicio</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#codigo">Código</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="container">
-    <section id="sobre-mi" class="seccion">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy Angel Vila, desarrollador web autodidacta con pasión por crear sitios y aplicaciones funcionales, atractivas y accesibles. Me especializo en desarrollo front-end y busco ayudar a negocios locales a crecer con presencia digital.
-      </p>
-    </section>
+  <!-- 🔹 Sección Hero -->
+  <section id="inicio" class="hero">
+    <h2>Hola, soy <span>Angel Vila</span></h2>
+    <p>Desarrollador Web Frontend | Panadero creativo 🍞</p>
+    <a href="#proyectos" class="btn">Ver Proyectos</a>
+  </section>
 
-    <section id="proyectos" class="seccion">
-      <h2>Proyectos destacados</h2>
+  <!-- 🔹 Sobre mí -->
+<section id="sobre-mi">
+  <h2>Sobre mí</h2>
+  <p>
+    Soy estudiante de Desarrollo Web con pasión por crear proyectos útiles, visuales y funcionales. 
+    Me gusta experimentar con nuevas tecnologías y también disfruto aplicar mis conocimientos en el mundo real, como en mi panadería.
+  </p>
+  <p>
+    Ofrezco servicios de <strong>diseño y desarrollo de sitios web</strong>, especialmente tiendas online y páginas modernas, 
+    para que negocios y emprendedores puedan mostrar sus productos, recibir pedidos y crecer en internet.
+  </p>
+</section>
 
-      <article class="proyecto">
-        <h3>🍕 Pizzería Vila</h3>
-        <p>Desarrollé un sitio web con catálogo de productos, carrito de compras e integración para hacer pedidos vía WhatsApp.</p>
-        <a href="https://angelv9627.github.io/Pizzer-a-Vila/" target="_blank" rel="noopener noreferrer">Ver sitio</a>
-      </article>
 
-      <article class="proyecto">
-        <h3>🧮 Calculadora Básica</h3>
-        <p>Proyecto simple en JavaScript con funcionalidades matemáticas y diseño estético.</p>
-        <a href="https://calculadora-basicaa.netlify.app/" target="_blank" rel="noopener noreferrer">Ver sitio</a>
-      </article>
+  <!-- 🔹 Habilidades -->
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Git/GitHub</span>
+    </div>
+  </section>
 
-    </section>
+  <!-- 🔹 Proyectos -->
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Calculadora</h3>
+        <p>Una calculadora básica hecha con HTML, CSS y JS.</p>
+        <a href="https://angelv9627.github.io/calculadora-basica/" target="_blank">Demo</a>
+        <a href="https://github.com/AngelV9627/calculadora" target="_blank">Código</a>
+      </div>
+      <div class="card">
+        <h3>Pizzería Vila</h3>
+        <p>Tienda online para pedidos de pizza.</p>
+        <a href="https://angelv9627.github.io/Pizzer-a-Vila/" target="_blank">Demo</a>
+        <a href="https://github.com/AngelV9627/pizzeria" target="_blank">Código</a>
+      </div>
+      <div class="card">
+        <h3>Portafolio</h3>
+        <p>Este mismo portafolio personal.</p>
+        <a href="https://angelv9627.github.io/Portafolio/" target="_blank">Demo</a>
+        <a href="https://github.com/AngelV9627/Portafolio" target="_blank">Código</a>
+      </div>
+    </div>
+  </section>
+ <!-- 🔹 Otras Habilidades -->
+<section id="otras-habilidades">
+  <h2>Otras habilidades</h2>
+  <ul class="extra-skills">
+    <li><span class="icon">🖥️</span> Mantenimiento y optimización de PC (detección de fallas, mejora de rendimiento).</li>
+    <li><span class="icon">📊</span> Manejo intermedio de Excel (fórmulas, tablas dinámicas, organización de datos).</li>
+    <li><span class="icon">⚙️</span> Conocimientos básicos de administración de sistemas.</li>
+  </ul>
+</section>
 
-    <section id="codigo" class="seccion">
-      <h2>Código en GitHub</h2>
-      <p>Podés ver el código fuente de mis proyectos y colaboraciones en mi perfil de GitHub:</p>
-      <a href="https://github.com/AngelV9627" target="_blank" rel="noopener noreferrer">https://github.com/AngelV9627</a>
-    </section>
 
-    <section id="contacto" class="seccion">
-      <h2>Contacto</h2>
-      <p>¿Querés una página para tu negocio o tenés alguna consulta? Contactame:</p>
-      <a href="https://wa.me/5493825400585?text=Hola%20Angel%2C%20quiero%20una%20p%C3%A1gina%20web%20para%20mi%20negocio" class="btn-contacto" target="_blank" rel="noopener noreferrer">Contactame por WhatsApp</a>
-    </section>
 
-  </div>
+  <!-- 🔹 Contacto -->
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes escribirme a:</p>
+    <p>angelvila270@gmail.com</p>
+    <div class="socials">
+      <a href="https://github.com/AngelV9627" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
 
   <footer>
-    © 2025 Angel Vila - Desarrollo Web Profesional
+    <p>© 2025 - Angel Vila</p>
   </footer>
-  <script>
-  // Cambiar fondo del header al hacer scroll
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if(window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
-</script>
 
+  <script src="script.js"></script>
 </body>
 </html>
