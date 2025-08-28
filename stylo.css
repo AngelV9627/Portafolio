@@ -19,6 +19,7 @@ header {
   padding: 15px 20px;
   position: sticky;
   top: 0;
+  z-index: 1000;
 }
 
 nav {
@@ -41,6 +42,14 @@ nav a {
 
 nav a:hover {
   color: #00adb5;
+}
+
+/* Navbar responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /* ====== Hero ====== */
@@ -83,6 +92,16 @@ h2 {
   color: #222;
 }
 
+#sobre-mi p {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#sobre-mi strong {
+  color: #00adb5;
+}
+
 /* ====== Habilidades ====== */
 .skills {
   display: flex;
@@ -111,6 +130,12 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .card a {
@@ -126,18 +151,10 @@ h2 {
 .card a:hover {
   background: #007b80;
 }
-/* ====== Otras habilidades ====== */
-#otras-habilidades {
-  background: #fdfdfd;
-  padding: 50px 20px;
-  border-radius: 10px;
-  margin-top: 40px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
 
 /* ====== Otras habilidades ====== */
 #otras-habilidades {
-  background: #222831; /* gris oscuro */
+  background: #222831;
   padding: 50px 20px;
   border-radius: 10px;
   margin-top: 40px;
@@ -147,7 +164,7 @@ h2 {
 #otras-habilidades h2 {
   text-align: center;
   margin-bottom: 25px;
-  color: #00adb5; /* turquesa tecnológico */
+  color: #00adb5;
 }
 
 .extra-skills {
@@ -158,7 +175,7 @@ h2 {
 }
 
 .extra-skills li {
-  background: #393e46; /* gris más claro para contraste */
+  background: #393e46;
   margin: 12px 0;
   padding: 14px 18px;
   border-left: 5px solid #00adb5;
@@ -173,7 +190,6 @@ h2 {
 .extra-skills .icon {
   font-size: 1.3rem;
 }
-
 
 /* ====== Contacto ====== */
 .socials {
@@ -193,14 +209,4 @@ footer {
   color: white;
   padding: 15px;
   margin-top: 20px;
-}
-
-#sobre-mi p {
-  margin-bottom: 15px;
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-#sobre-mi strong {
-  color: #00adb5;
 }
