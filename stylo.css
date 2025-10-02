@@ -121,7 +121,7 @@ h2 {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .card {
@@ -135,17 +135,31 @@ h2 {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
+/* Imagen dentro de la card */
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Destacar CineVila */
+.card.cinevila {
+  border-top: 5px solid #ff5722;
+}
+
+/* Botones de las cards */
 .card a {
   display: inline-block;
-  margin: 10px;
+  margin: 10px 5px;
   padding: 8px 12px;
   background: #00adb5;
   color: white;
   border-radius: 5px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .card a:hover {
